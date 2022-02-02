@@ -30,10 +30,16 @@ const Home = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <div className="hero-buttons">
-              <Link className="button accent-button hero-connect-button" to="/">
+              <Link
+                className="button accent-button hero-connect-button"
+                to="/Portfolio-Concept"
+              >
                 Get in touch!
               </Link>
-              <Link className="button hero-work-button" to="/work">
+              <Link
+                className="button hero-work-button"
+                to="/Portfolio-Concept/work"
+              >
                 See my work!
               </Link>
             </div>
@@ -56,27 +62,27 @@ const Home = () => {
         <div className="projects-list">
           <ProjectLink
             projectName="facebook logo and brand redesign"
-            projectLink=""
+            projectLink="/Portfolio-Concept"
             projectImage=""
           />
           <ProjectLink
             projectName="microsoft promotional campaign lead"
-            projectLink=""
+            projectLink="/Portfolio-Concept"
             projectImage=""
           />
           <ProjectLink
             projectName="shopify website redesign"
-            projectLink=""
+            projectLink="/Portfolio-Concept"
             projectImage=""
           />
           <ProjectLink
             projectName="nexus lead illustrator and web designer"
-            projectLink=""
+            projectLink="/Portfolio-Concept"
             projectImage=""
           />
           <ProjectLink
             projectName="bridges to university creative director"
-            projectLink=""
+            projectLink="/Portfolio-Concept"
             projectImage=""
           />
         </div>
@@ -89,7 +95,10 @@ const Home = () => {
           <p>Phone: xxx-xxx-xxxx</p>
           <p>Based in: Ontario, Canada</p>
           <p>Email: hello@athenaowens.com</p>
-          <Link className="button accent-button contact-connect-button" to="/">
+          <Link
+            className="button accent-button contact-connect-button"
+            to="/Portfolio-Concept"
+          >
             Get in touch!
           </Link>
         </div>

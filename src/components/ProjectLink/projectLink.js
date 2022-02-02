@@ -5,7 +5,7 @@ import "./projectLink.css";
 
 const ProjectLink = (props) => {
   return (
-    <Link to="/" className="project-link">
+    <Link to={props.projectLink} className="project-link">
       <h3 className="project-name">{props.projectName}</h3>
       <i className="fas fa-chevron-right project-arrow"></i>
     </Link>

@@ -6,10 +6,10 @@ import "./nav.css";
 const Nav = () => {
   return (
     <div className="nav-container">
-      <Link className="nav-logo" to="/">
+      <Link className="nav-logo" to="/Portfolio-Concept">
         A
       </Link>
-      <Link className="nav-link" to="/work">
+      <Link className="nav-link" to="/Portfolio-Concept/work">
         Work
       </Link>
     </div>
