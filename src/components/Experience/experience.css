@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.experience-container {
+  background-color: var(--accent-dark);
+  padding: 30px 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding-bottom: 40px;
+  /* border: 1px solid red; */
+}
+
+.experience-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.stats-card {
+  /* border: 1px solid magenta; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.stats-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+}
+
+.stats-desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.experience-brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 80px;
+  max-width: 800px;
+  /* border: 1px solid red; */
+}
+
+.brand {
+  /* border: 1px solid green; */
+}
+
+.coca-cola {
+  height: 30px;
+}
+
+.facebook {
+  height: 25px;
+}
+
+.shopify {
+  height: 35px;
+}
+
+.microsoft {
+  height: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .experience-container {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .experience-container {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .experience-container {
+    /* padding-bottom: 30px; */
+  }
+  .stats-number {
+    font-size: 3rem;
+  }
+
+  .experience-brands {
+    column-gap: 20px;
+  }
+
+  .coca-cola {
+    height: 25px;
+  }
+
+  .facebook {
+    height: 20px;
+  }
+
+  .shopify {
+    height: 30px;
+  }
+
+  .microsoft {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .experience-brands {
+    /* column-gap: 10px; */
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .experience-stats {
+    column-gap: 10px;
+  }
+
+  .stats-desc {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .brand {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stats-number {
+    font-size: 2rem;
+  }
+  .stats-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .experience-stats {
+    flex-direction: column;
+    column-gap: 0;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .experience-brands {
+    flex-direction: column;
+  }
+
+  .brand {
+    flex-basis: auto;
+    width: auto;
+  }
+}

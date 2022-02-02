@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.nav-container {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-logo {
+  font-family: "Elsie", cursive;
+  font-size: 2.5rem;
+  color: black;
+  transition: 0.3s ease-in-out color;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-transform: lowercase;
+  color: black;
+  transition: 0.3s ease-in-out color;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-radius: 5px;
+  width: 0%;
+  bottom: -1px;
+  background-color: var(--accent-dark);
+  transition: 0.3s ease-in-out width, 0.3s ease-in-out background;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  background-color: var(--accent-dark);
+}
+
+.nav-logo:hover,
+.nav-link:hover {
+  color: var(--accent-dark);
+}

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  /* border: 1px solid red; */
+  color: black;
+}
+
+.project-link:hover {
+  color: var(--accent-dark);
+}
+
+.project-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.project-arrow {
+  font-size: 1.4rem;
+}
